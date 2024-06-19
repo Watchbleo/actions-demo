@@ -1,5 +1,6 @@
-- name: install cowsay Program
-          run: sudo apt-get install cowsay -y
-
-        - name: Execute Cowsay cmd
-          run: cowsay -f dragon " Run for cover, I am a DRAGON .....RWARRR" >> dragon.txt
+#/bin/sh
+sudo apt-get install cowsay -y
+cowsay -f dragon " Run for cover, I am a DRAGON .....RWARRR" >> dragon.txt
+grep -i "dragon" dragon.txt
+cat dragon.txt
+ls
