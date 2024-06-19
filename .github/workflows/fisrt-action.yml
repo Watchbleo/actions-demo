@@ -13,7 +13,7 @@ jobs:
           run: ./ascii-scrpt.sh
 
         - name: Execute shell script
-          run: chmod +x ascii-scrpt.sh
+          run: chmod +x ascii-script.sh
 
         - name: Test file
           run: grep -i "dragon" dragon.txt
