@@ -10,10 +10,10 @@ jobs:
           uses: actions/checkout@v4
         
         - name: Execute shell script
-          run: ./ascii-scrpt.sh
+          run: chmod +x ascii-script.sh
 
         - name: Execute shell script
-          run: chmod +x ascii-script.sh
+          run: ./ascii-script.sh
 
         - name: Test file
           run: grep -i "dragon" dragon.txt
